@@ -1,0 +1,15 @@
+nav {
+    background-color: cadetblue;
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+}
+divv{
+    display: flex;
+}
+body{
+    margin: 0;
+}
+.container {
+    margin: 8px 32px;
+}
