@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 nav {
     background-color: cadetblue;
     display: flex;
@@ -12,4 +13,75 @@ body{
 }
 .container {
     margin: 8px 32px;
+=======
+
+body{
+    background-color: rgb(242, 242, 242);
+}
+nav {
+    background-color: rgb(182, 176, 159);
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+}
+.highlight{
+    background-color: rgb(105, 101, 91);
+    color: rgb(234, 228, 213);
+    padding: 0 15px;
+}
+main{
+    margin: 8px 50px; /*แบ่งจากขอบ*/
+}
+flex_center{
+    display: flex;
+    align-items: center
+    margin-top 10px;
+}
+welcome{
+    background-color: rgba(97, 96, 96, 0.813);
+    color: rgb(234, 228, 213);
+    display: flex;
+    padding: 0 15px;
+}
+.ben{
+    background-blend-mode:luminosity;
+}
+flex_grid{
+    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    /* แบ่งเป็น 2 คอลัมน์เท่าๆ กัน (1fr 1fr) หรือจะแบ่ง เป็น(30% 70%) */
+    gap: 20px; /* ระยะห่างระหว่าง 2 ส่วน */
+
+}
+.low {
+    padding: 0 30px;
+}
+.low_er {
+    padding: 0 16px;
+}
+.sp {
+  margin: 0;
+  line-height: var(--lh, 1.5); /* ถ้าไม่กำหนด --lh จะเป็น 1.5 */
+}
+.end{
+    padding: 0 16px;
+    margin-left: auto;
+    margin-right: 0;
+}
+.up{
+    /* เพิ่มระยะห่างด้านบน 10 พิกเซล */
+    margin-top: 10px;
+
+}
+.lowwer {
+    padding: 0 10px;
+}
+textarea {
+    width: 100%; 
+    /* box-sizing: border-box; สำคัญมาก! ช่วยให้ padding และ border ไม่ทำให้ความกว้างเกิน 100% */
+    box-sizing: border-box; 
+    height: 125px; 
+>>>>>>> 60ce99a (first commit)
 }
