@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <h2>68070032</h2>
+        <h2>ITF Website</h2>
+        <h2>Week 14</h2>
+    </nav>
+
+    <main>
+        <!--Welcome-->
+        <welcome>
+            <img src="toolbox.png" width="100" alt="toolbox" />
+            <div class="low">
+                <br>
+                <h1 class="sp" astyle="--lh:1;">Welcome to my ITF Website!</h1>
+                <p class="sp" astyle="--lh:1.5;">Welcome to my first HTML + CSS + JS website!</p>
+            </div>
+        </welcome>
+        <hr>
+        <!--output-->
+        <div>
+            <textarea id='output' readonly></textarea>
+        </div>
+        <hr>
+        <flex_grid>
+            <acc>
+                <!--Acco Overview-->
+                <h2 class="sp highlight" astyle="--lh:1.7;">Acccount Overview</h2>
+                <flex_center class="up">
+                    <img src="devid.png" width="100" alt="devid" />
+                    <div class = "low_er" >
+                        <h3 class="sp" astyle="--lh:1.7;">Acccount Information</h3>
+                        <p class="sp" style="--lh:1.5;">Name: Yanisa Chanudom</p>
+                        <p class="sp" style="--lh:1.5;">Type: Saving Acccount</p>
+                    </div>
+                </flex_center>
+                <!--Balance Inform-->
+                <flex_center>
+                    <img src="coins.png" width="100" alt="coins" />
+                    <div class = "low_er" >
+                        <h3 class="sp" style="--lh:1.7;">Balance Information</h3>
+                        <!--Balance Information account-->
+                        <flex_center>
+                            <p class="sp" style="--lh:1.2;">
+                                Current account<br>
+                                balance :
+                            </p>
+                            <ch class="end">
+                                <input type="number" id="balance" value="0" height="50">
+                            </ch>
+                        </flex_center>
+                        <!--Balance Information cash-->
+                        <flex_center>
+                            <p class="sp" style="--lh:1.2;">
+                                Current cash<br>
+                                balance :
+                            </p>
+                            <ch class="end">
+                                <input type="number" id="cash" value="0" height="50">
+                            </ch>
+                        </flex_center>
+                        <button class="up" onclick="change()">Change</button>
+                        <script src="script.js"></script>
+                    </div>
+                </flex_center>
+                <!--Bank Operation-->
+                <flex_center>
+                    <img src="banknote.png" width="100" alt="banknote" />
+                    <div class = "low_er" >
+                        <h3 class="sp" style="--lh:1.7;">Bank Operation</h3>
+                        <flex_center>
+                            <select name="operation" id="se_operation">
+                                <option value="Deposit">Deposit</option>
+                                <option value="Withdraw">Withdraw</option>
+                            </select>
+                            <ch class="end">
+                                <input type="number" id="operation" value="0" height="50">
+                            </ch>
+                        </flex_center>
+                        <ch>
+                            <button class="up" onclick="proceed()">Proceed</button>
+                            <script src="script.js"></script>
+                        </ch>
+
+                    </div>
+                </flex_center>
+                
+            </acc>
+            <acc>
+                <!--Financial tools-->
+                <h2 class="sp highlight" astyle="--lh:1.7;">Financial Tools</h2>
+                <flex_center class="up">
+                    <img src="safe.png" width="100" alt="safe" />
+                    <div class = "low_er" >
+                        <h3 class="sp" style="--lh:1.7;">Curreny converter</h3>
+                        <!--Input balance-->
+                        <flex_center>
+                            <p class="sp" style="--lh:1.2;">
+                                Input balance :
+                            </p>
+                            <ch class="end">
+                                <input type="number" id="input" value="0" height="50">
+                            </ch>
+                        </flex_center>
+                        <!--Output balance-->
+                        <flex_center class="up">
+                            <p class="sp" style="--lh:1.2;">
+                                Output balance :
+                            </p>
+                            <ch class="end">
+                                <input type="number" id="output" value="0" height="50">
+                            </ch>
+                        </flex_center>
+                        <!--Output Currency-->
+                        <flex_center class="up">
+                            <p class="sp" style="--lh:1.2;">
+                                Input currency:
+                            </p>
+                            <as class = "lowwer">
+                                <select name="Currency" id="Currency">
+                                    <option value="USD">USD</option>
+                                    <option value="THB">THB</option>
+                                </select>
+                            </as>
+                            <as class = "lowwer">
+                            <button onclick="convert()">convert</button>
+                            </as>
+                            <script src="script.js"></script>
+                        </flex_center>
+                    </div>
+                </flex_center>
+            </acc>
+        </flex_grid>
+    </main>
+</body>
+</html>
+
